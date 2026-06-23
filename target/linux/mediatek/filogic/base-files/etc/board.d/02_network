@@ -413,6 +413,12 @@ mediatek_setup_macs()
 	yuncore,ax835)
 		label_mac=$(mtd_get_mac_binary "Factory" 0x4)
 		;;
+	panellan,zx7981pd|\
+	panellan,zx7981pde)
+		label_mac=$(mtd_get_mac_binary Factory 4)
+		lan_mac=$label_mac
+		wan_mac=$(macaddr_add "$label_mac" 1)
+		;;
 	zhao,7981r128)
 		lan_mac=$(mtd_get_mac_binary "Factory" 0x04)
 		wan_mac=$(macaddr_add "$lan_mac" 1)

@@ -253,6 +253,8 @@ platform_do_upgrade() {
 	huasifei,wh3000r-nand|\
 	jiorouter,ax6000-jidu6101|\
 	jiorouter,ax6000-jidu6j01|\
+	panellan,zx7981pd|\
+	panellan,zx7981pde|\
 	ruijie,rg-x30e-pro|\
 	zhao,7981r128)
 		CI_UBIPART="ubi"
