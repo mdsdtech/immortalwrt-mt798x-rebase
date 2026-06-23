@@ -810,6 +810,8 @@ setup_model()
 	openembed,som7981 |\
 	openfi,6c |\
 	openwrt,one |\
+	panellan,zx7981pd|\
+	panellan,zx7981pde|\
 	qihoo,360t7 |\
 	routerich,ax3000* |\
 	ruijie,rg-x30e-pro |\

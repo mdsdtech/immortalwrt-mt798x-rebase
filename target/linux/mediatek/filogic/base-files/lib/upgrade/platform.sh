@@ -176,6 +176,8 @@ platform_do_upgrade() {
 	cudy,wr3000h-v1|\
 	cudy,wr3000p-v1|\
 	huasifei,wh3000-pro-nand|\
+	panellan,zx7981pd|\
+	panellan,zx7981pde|\
 	ruijie,rg-x30e-pro)
 		CI_UBIPART="ubi"
 		nand_do_upgrade "$1"

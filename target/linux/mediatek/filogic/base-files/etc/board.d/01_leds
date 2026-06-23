@@ -223,6 +223,12 @@ openwrt,one)
 	ucidef_set_led_netdev "lanact" "LANACT" "green:lan" "eth1" "rx tx"
 	ucidef_set_led_netdev "lanlink" "LANLINK" "amber:lan" "eth1" "link"
 	;;
+"panellan,zx7981pd" | \
+"panellan,zx7981pde")
+	ucidef_set_led_default "power" "POWER" "wt:power:blue" "1"
+	ucidef_set_led_netdev "wlan2g" "WLAN2G" "wt:wifi:blue" "ra0" "link tx rx"
+	ucidef_set_led_netdev "wlan5g" "WLAN5G" "wt:wifi:blue" "rai0" "link tx rx"
+    ;;
 routerich,ax3000|\
 routerich,ax3000-ubootmod)
 	ucidef_set_led_netdev "lan-1" "lan-1" "blue:lan-1" "lan1" "link tx rx"
