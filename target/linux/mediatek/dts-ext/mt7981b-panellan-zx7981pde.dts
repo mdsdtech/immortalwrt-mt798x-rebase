@@ -310,3 +310,7 @@
 &sgmiisys0 {
 	/delete-node/ mediatek,pnswap;
 };
+
+&hnat {
+	ext-devices-prefix = "wwan", "usb", "eth";
+};
